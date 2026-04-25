@@ -8,6 +8,7 @@ const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jest-environment-jsdom',
   moduleDirectories: ['node_modules', '<rootDir>/'],
+  coverageReporters: ['json-summary', 'text', 'lcov'],
 }
 
 module.exports = createJestConfig(customJestConfig)

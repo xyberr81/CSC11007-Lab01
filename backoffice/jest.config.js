@@ -28,6 +28,7 @@ const customJestConfig = {
     '^@webhookServices/(.*)$': '<rootDir>/modules/webhook/services/$1',
     '^@webhookModels/(.*)$': '<rootDir>/modules/webhook/models/$1',
   },
+  coverageReporters: ['json-summary', 'text', 'lcov'],
 }
 
 module.exports = createJestConfig(customJestConfig)
